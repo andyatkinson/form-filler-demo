@@ -1,0 +1,12 @@
+development: &development
+  adapter: postgresql
+  host: localhost
+  database: form_filler_dev
+
+test:
+  adapter: postgresql
+  host: localhost
+  database: form_filler_test
+
+production:
+  <<: *development
