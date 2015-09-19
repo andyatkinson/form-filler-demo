@@ -1,1 +1,25 @@
 Forms
+
+<div>
+  <ul>
+  <% @forms.each do |form| %>
+    <li>
+    <div>
+      <%= form.name %>
+      <% if form.pdf_form_link %>
+        <%= link_to 'PDF', form.pdf_form_link %>
+      <% else %>
+        <%= form_tag generate_pdf_form_path(form.id), method: 'post' do %>
+          <%= hidden_field_tag 'form[id]', form.id %>
+          <button type="submit">Generate!</button>
+        <% end %>
+      <% end %>
+    </div>
+    </li>
+  <% end %>
+  </ul>
+</div>
+
+<div>
+  <%= link_to 'New Form', new_form_path %>
+</div>
