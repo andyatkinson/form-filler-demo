@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg'
-gem 'puma', "2.7.1"
+gem 'puma', "3.12.2"
 gem 'rails_12factor'
 gem 'pdf-forms'
 gem 'aws-sdk', '~> 1.54.0'
