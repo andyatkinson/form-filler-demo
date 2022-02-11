@@ -80,6 +80,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.11.2)
+    nio4r (2.5.8)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     pdf-forms (0.6.1)
@@ -90,9 +91,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (2.7.1)
-      rack (>= 1.1, < 2.0)
-    rack (1.6.11)
+    puma (4.3.11)
+      nio4r (~> 2.0)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.11.1)
@@ -170,7 +171,7 @@ DEPENDENCIES
   pdf-forms
   pg
   pry
-  puma (= 2.7.1)
+  puma (= 4.3.11)
   rails (~> 4.2)
   rails_12factor
   sass-rails (~> 5.0)
